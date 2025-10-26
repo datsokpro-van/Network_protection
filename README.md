@@ -43,7 +43,7 @@ sudo nmap -sV 192.168.30.196
 - 8080/tcp, 8081/tcp — дополнительные HTTP-сервисы
 
 Анализ логов
-
+```
 Suricata (/var/log/suricata/fast.log)
 
 Suricata успешно зафиксировал активность сканирования:
@@ -51,6 +51,7 @@ Suricata успешно зафиксировал активность скани
 [**] [1:2024364:5] ET SCAN Possible Nmap User-Agent Observed [**] 
 [Classification: Web Application Attack] [Priority: 1] 
 {TCP} 192.168.30.198:42656 -> 192.168.30.196:8080
+```
 
 Также зафиксированы технические нарушения протокола HTTP (например, HTTP Request line incomplete), вызванные агрессивным версионным сканированием (-sV).
 
